@@ -63,7 +63,6 @@ app.post("/", (req, res) => {
             if (foundMeme.url === req.body.url && foundMeme.caption === req.body.caption) {
                 res.render("error409");
             } else {
-                console.log("Checking failed");
                 post.save( err => {
                   if (!err){
                     c++;
@@ -72,7 +71,6 @@ app.post("/", (req, res) => {
                 });
             }
         } else {
-            console.log("Checking failed");
             post.save( err => {
                 if (!err){
 
