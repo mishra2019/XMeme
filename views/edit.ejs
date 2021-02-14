@@ -1,0 +1,16 @@
+<%- include("partials/header"); -%>
+
+<h1>EDIT MEME</h1>
+<form class="edit-form" action="/memes/<%=meme._id%>/edit?_method=PATCH" method="post">
+    <div class="form-row">
+      <label for="caption">Caption</label><br>
+      <input type="text" name="caption" id="caption" value="<%= meme.caption %>" required>
+    </div>
+    <div class="form-row">
+      <label for="url" >URL</label><br>
+      <input type="text" name="url" value="<%= meme.url %>" required>
+    </div>
+    <button class="button update" type="submit" name="button">Update Meme</button>
+</form>
+
+<%- include("partials/footer"); -%>

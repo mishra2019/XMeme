@@ -1,0 +1,134 @@
+/* styling the body  */
+body{
+  font-family: Poppins,sans-serif;
+  align-content: center;
+  padding: 0 5%;
+}
+/* stying the form  */
+.container{
+  width:800px;
+   margin:0 auto;
+   padding-top:5%;
+}
+/* hr styling */
+hr {
+    border-style: dotted none none;
+    border-width: 6px;
+    margin: 100px auto 0;
+    border-color: #bbbfca;
+    width: 20%;
+}
+/* styling the label */
+label{
+  font-family: Poppins,sans-serif;
+  color: grey;
+}
+/* styling the input filed */
+input{
+  font-family: Poppins,sans-serif;
+  width:80%;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border-radius:6px;
+  box-sizing: border-box;
+}
+/* styling the button */
+.button{
+  font-family: Poppins,sans-serif;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border-radius:6px;
+  display: block;
+  box-sizing: border-box;
+  background: crimson;
+  color:white;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  color:crimson;
+  background: none;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+.edit-form input {
+    width: 80%;
+}
+/* styling the memes which display on  the screem below the form  */
+.output{
+  font-family: Poppins,sans-serif;
+  width:50%;
+   margin:100px auto;
+}
+.output img{
+  width: 100%;
+  border-radius: 6px;
+}
+
+.edit {
+    padding: 5px;
+    display: inline-block;
+    background: #00bcd4;
+    display: block;
+}
+
+.button.edit:hover{
+  color:#00bcd4;
+  background: none;
+}
+
+.button.update {
+    display: inline;
+    background: #54e346;
+}
+
+.button.update:hover {
+    color: #54e346;
+    background: none;
+}
+
+.memePost {
+    font-family: Poppins,sans-serif;
+    width: 50%;
+    margin: 100px auto;
+}
+
+.memePost img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.button.cancel {
+    margin-left: 20px;
+    display: inline;
+    background: #ec0101;
+}
+
+.button.cancel:hover {
+    color: #ec0101;
+    background: none;
+}
+/* responsive section */
+@media (max-width: 947px) {
+
+  .container{
+    width:400px;
+     margin:0 auto;
+    padding-top:5%;
+  }
+  section.output{
+     width:100%;
+     margin:100px auto;
+  }
+  .output img{
+    width: 100%;
+    border-radius: 6px;
+
+  }
+ .button{
+  margin: 3px 0;
+  padding: 4px 5px;
+   }
+}
