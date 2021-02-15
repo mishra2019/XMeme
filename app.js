@@ -51,7 +51,6 @@ app.get("/",function(req,res){
 app.post("/", (req, res) => {
     //creating new post
     const post = new Post({
-
         name: req.body.name,
         caption: req.body.caption,
         url: req.body.url
@@ -65,7 +64,6 @@ app.post("/", (req, res) => {
             } else {
                 post.save( err => {
                   if (!err){
-                    c++;
                     res.redirect("/");
                   }
                 });
@@ -73,8 +71,7 @@ app.post("/", (req, res) => {
         } else {
             post.save( err => {
                 if (!err){
-
-                    res.redirect("/");
+                      res.redirect("/");
                 }
             });
         }
@@ -101,7 +98,6 @@ app.route("/memes")
     // handling post request from backend
     .post((req, res) => {
         const newMeme = new Post({
-
             name: req.body.name,
             caption: req.body.caption,
             url: req.body.url
@@ -115,7 +111,6 @@ app.route("/memes")
                 } else {
                     newMeme.save( err => {
                         if (!err){
-                            c++;
                             res.send({_id: newMeme._id});
                         } else {
                             res.send(err);
@@ -125,7 +120,6 @@ app.route("/memes")
             } else {
                 newMeme.save( err => {
                     if (!err){
-                        c++;
                         res.send({_id: newMeme._id});
                     } else {
                         res.send(err);
